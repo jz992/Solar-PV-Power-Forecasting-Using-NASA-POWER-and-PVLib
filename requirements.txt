@@ -1,0 +1,8 @@
+﻿numpy
+pandas
+matplotlib
+scikit-learn
+xgboost
+tensorflow
+pvlib
+shap
