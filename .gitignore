@@ -3,7 +3,7 @@
 .venv/
 venv/
 .ipynb_checkpoints/
-results/*.csv
-results/figures/*.png
 data/*.csv
 !data/README.md
+
+results/simulated_pv_dataset.csv
