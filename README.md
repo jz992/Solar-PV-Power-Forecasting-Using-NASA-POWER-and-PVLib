@@ -4,11 +4,13 @@ Solar PV power forecasting with NASA POWER meteorological data, PVLib simulation
 
 ## Project Overview
 
-This repository contains a professional, runnable Python pipeline for solar PV power forecasting using NASA POWER hourly meteorological data and PVLib-based PV system simulation.
+This repository contains a professional, runnable Python pipeline converted from the original notebook into modular `.py` files for solar PV power forecasting using NASA POWER hourly meteorological data and PVLib-based PV system simulation.
 
 NASA POWER provides the meteorological and irradiance inputs. PVLib converts those inputs into simulated photovoltaic power output. The simulated PV output is then used as the forecasting target for machine-learning and deep-learning models.
 
 The PV output in this project is simulated using PVLib. It is not measured output from a physical solar plant.
+
+The original notebook logic has been converted into `main.py` and reusable modules under `src/`. The repository is intended to run as a Python project with `python main.py`.
 
 ## Motivation
 
@@ -129,8 +131,6 @@ Solar-PV-Power-Forecasting-Using-NASA-POWER-and-PVLib/
 ├── requirements.txt
 ├── .gitignore
 ├── main.py
-├── notebooks/
-│   └── Solar_PV_Forecasting_Colab.ipynb
 ├── data/
 │   ├── README.md
 │   └── nasa_power_hourly.csv
@@ -157,5 +157,4 @@ Solar-PV-Power-Forecasting-Using-NASA-POWER-and-PVLib/
 - Add additional weather forecast inputs.
 - Add model persistence and experiment tracking.
 - Add a dashboard for forecast visualization.
-
 
